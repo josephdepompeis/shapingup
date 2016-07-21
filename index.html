@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="gemStore">
+  <head>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </head>
+  <body ng-controller="StoreController as store">
+    <div class="product row">
+      <h3>{{store.product.name}}
+
+        <em class="pull-right">{{store.product.price}} </em>
+      </h3>
+    </div>
+  </body>
+
+</html>
