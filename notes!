@@ -27,3 +27,10 @@ var gem = {
   <p> Product Description </p><p> {{store.product.description}} </p>
 
 </div>
+
+
+
+
+<button ng-show="store.product.canPurchase">  Add to Cart </button>
+
+<div ng-hide="store.product.soldOut"> </div>

@@ -8,19 +8,13 @@
     <script type="text/javascript" src="app.js"></script>
   </head>
   <body ng-controller="StoreController as store">
-    <div class="product">
-          <h3>{{store.product.name}}</h3>
-          <h1> Product Name </h1><h1> {{store.product.name}} </h1>
-
-          <h2> Product Price </h2><h2> {{store.product.price}}</h2>
-
-          <h3> Product Description </h3><h3> {{store.product.description}} </h3>
-
-
-
-          <button ng-show="store.product.canPurchase">  Add to Cart </button>
-
-
+    <div ng-repeat="product in store.products">
+      <div class="product" ng-hide="store.product.soldOut">
+        <h1> Product Name: {{product.name}} </h1>
+        <h2> Product Price: ${{product.price}}</h2>
+        <h3> Product Description: {{product.description}} </h3>
+        <button ng-show="product.canPurchase">  Add to Cart </button>
+      </div>
     </div>
   </body>
 
