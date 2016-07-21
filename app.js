@@ -2,7 +2,7 @@
   var gems = [
     {
     name: 'Azurite',
-    price: 2.95,
+    price: 2,
     description: 'some shitty gem!',
     canPurchase: true,
     soldOut: false,
